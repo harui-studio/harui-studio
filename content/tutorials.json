@@ -1,0 +1,18 @@
+{
+  "intro": "依材料包名稱或編號找到對應教學。目前每款材料包都附紙本說明書；網站上的圖文或影片教學整理中。",
+  "items": [
+    {
+      "kitSlug": "pen-case",
+      "method": "附說明書（含穿針與縫製說明）",
+      "links": [],
+      "buyersOnly": false
+    },
+    {
+      "kitSlug": "keyring",
+      "method": "附說明書（含穿針與縫製說明）",
+      "links": [],
+      "buyersOnly": false
+    }
+  ],
+  "helpText": "製作時卡關，請拍下卡住的步驟與位置，透過 Email、電話或 Facebook 訊息聯絡工作室，並註明材料包名稱或編號。"
+}

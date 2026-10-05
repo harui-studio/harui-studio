@@ -1,0 +1,47 @@
+{
+  "siteName": "春豬工作室 Harui Studio",
+  "shortName": "春豬工作室",
+  "siteUrl": "",
+  "inquiryEndpoint": "",
+  "ga4Id": "",
+  "contact": {
+    "address": "台北市大安區青田街12巷12-2號1樓",
+    "phone": "02-2321-6931",
+    "phoneHref": "+886223216931",
+    "email": "haruistudio@gmail.com",
+    "facebook": "https://www.facebook.com/haruistudio",
+    "instagram": "https://www.instagram.com/haruistudio/",
+    "hours": ""
+  },
+  "home": {
+    "heroTitle": "把春豬的皮件，帶回家親手完成",
+    "heroText": "我們備好義大利牛皮皮片、針線與說明書，你在家一針一線縫出自己的作品。想調整款式，也可以請我們準備客製材料包。",
+    "heroNote": "本站商品為皮革材料包，收到後需自行縫製完成。",
+    "heroImage": "https://d10vnvbjqqg3q7.cloudfront.net/54eb44f1-69c1-453a-89f1-4258924bf2a0/media/c1751575-33de-4e29-82fa-cc4caff95434/c1751575-33de-4e29-82fa-cc4caff95434-1440x960.jpg"
+  },
+  "about": {
+    "story": "創辦人小鳥老師曾赴日本學習革鞄製作，之後把這門手藝帶回台灣。春豬工作室位在台北青田街的巷弄裡，在安靜溫暖的空間中，保留日式皮件的細節。",
+    "nameOrigin": "早期有些台灣父母會為女孩取名「春豬」（HARUI），希望她們像春天出生的小豬一樣，健康、快樂地長大。"
+  },
+  "classes": {
+    "text": "實體課程目前較少開設。開課資訊以購買平台公告為準，或歡迎直接詢問。",
+    "link": "https://booking.haruistudio.com/schedules"
+  },
+  "works": [
+    {
+      "name": "革小物作品",
+      "url": "https://harui-leathercraft.blogspot.com/",
+      "note": "零錢包、錢夾、筆袋、名片盒等小物"
+    },
+    {
+      "name": "革鞄作品",
+      "url": "https://harui-craft.blogspot.com/",
+      "note": "側背包、手提包、水桶包、托特包等包款"
+    }
+  ],
+  "faq": [],
+  "policies": {
+    "shopping": "",
+    "privacy": ""
+  }
+}

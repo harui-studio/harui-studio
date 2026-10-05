@@ -1,0 +1,111 @@
+{
+  "kits": [
+    {
+      "slug": "pen-case",
+      "styleNo": "No.120",
+      "name": "三角巧克力筆袋材料包",
+      "type": "筆袋",
+      "difficulty": 2,
+      "difficultyNote": "店家說明：適合初學者嘗試挑戰",
+      "material": "義大利牛皮",
+      "size": "",
+      "notIncluded": "",
+      "steps": "",
+      "experience": "",
+      "delivery": "",
+      "shipping": "",
+      "teaching": "附說明書（含穿針與縫製說明）",
+      "featured": true,
+      "variants": [
+        {
+          "name": "黑色・有打洞",
+          "color": "黑色",
+          "punched": true,
+          "price": 1280,
+          "buyUrl": "https://booking.haruistudio.com/products/fe6rawwg",
+          "image": "https://d10vnvbjqqg3q7.cloudfront.net/54eb44f1-69c1-453a-89f1-4258924bf2a0/media/c1751575-33de-4e29-82fa-cc4caff95434/c1751575-33de-4e29-82fa-cc4caff95434-1440x960.jpg",
+          "contents": ["筆袋皮片（已打洞）", "拉鍊（已車縫裝好）", "針", "線", "說明書"],
+          "toolTip": "店家建議搭配簡易基礎工具套組"
+        },
+        {
+          "name": "原色・有打洞",
+          "color": "原色",
+          "punched": true,
+          "price": 1280,
+          "buyUrl": "https://booking.haruistudio.com/products/xlvh3hhm",
+          "image": "https://d10vnvbjqqg3q7.cloudfront.net/54eb44f1-69c1-453a-89f1-4258924bf2a0/media/c6bbf346-c923-4dad-a9dc-0c5c00fcbf7a/c6bbf346-c923-4dad-a9dc-0c5c00fcbf7a-1440x960.jpg",
+          "contents": ["筆袋皮片（已打洞）", "拉鍊（已車縫裝好）", "針", "線", "說明書"],
+          "toolTip": "店家建議搭配簡易基礎工具套組"
+        },
+        {
+          "name": "黑色・無打洞",
+          "color": "黑色",
+          "punched": false,
+          "price": 980,
+          "buyUrl": "https://booking.haruistudio.com/products/fwxgfds1",
+          "image": "https://d10vnvbjqqg3q7.cloudfront.net/54eb44f1-69c1-453a-89f1-4258924bf2a0/media/7d481a5d-7375-4d9e-9cf7-6ff7374c985f/7d481a5d-7375-4d9e-9cf7-6ff7374c985f-1440x960.jpg",
+          "contents": ["筆袋皮片（未打洞）", "拉鍊", "針", "線", "說明書"],
+          "toolTip": "需自行打洞；店家建議準備充足工具，可參考進階基礎工具套組"
+        },
+        {
+          "name": "原色・無打洞",
+          "color": "原色",
+          "punched": false,
+          "price": 980,
+          "buyUrl": "https://booking.haruistudio.com/products/qkgl5a7u",
+          "image": "https://d10vnvbjqqg3q7.cloudfront.net/54eb44f1-69c1-453a-89f1-4258924bf2a0/media/ae5c999d-9fec-4360-9547-867879e79631/ae5c999d-9fec-4360-9547-867879e79631-1440x960.jpg",
+          "contents": ["筆袋皮片（未打洞）", "拉鍊", "針", "線", "說明書"],
+          "toolTip": "需自行打洞；店家建議準備充足工具，可參考進階基礎工具套組"
+        }
+      ]
+    },
+    {
+      "slug": "keyring",
+      "styleNo": "No.131",
+      "name": "隨身好朋友鑰匙圈材料包",
+      "type": "鑰匙圈",
+      "difficulty": 1,
+      "difficultyNote": "店家說明：適合初學者製作",
+      "material": "義大利牛皮",
+      "size": "",
+      "notIncluded": "",
+      "steps": "",
+      "experience": "",
+      "delivery": "",
+      "shipping": "",
+      "teaching": "附說明書（含穿針與縫製說明）",
+      "featured": true,
+      "variants": [
+        {
+          "name": "黑色・有打洞",
+          "color": "黑色",
+          "punched": true,
+          "price": 1080,
+          "buyUrl": "https://booking.haruistudio.com/products/g9rnfgoz",
+          "image": "https://d10vnvbjqqg3q7.cloudfront.net/54eb44f1-69c1-453a-89f1-4258924bf2a0/media/0e5583c0-9638-4105-9691-540a2a57a1be/0e5583c0-9638-4105-9691-540a2a57a1be-1440x960.jpg",
+          "contents": ["鑰匙圈皮片（已打洞）", "針", "線", "鑰匙圈", "說明書"],
+          "toolTip": "店家建議搭配簡易基礎工具套組"
+        }
+      ]
+    }
+  ],
+  "tools": [
+    {
+      "name": "簡易基礎工具套組",
+      "price": 680,
+      "buyUrl": "https://booking.haruistudio.com/products/a2wnnlob",
+      "image": "https://d10vnvbjqqg3q7.cloudfront.net/54eb44f1-69c1-453a-89f1-4258924bf2a0/media/b9c681be-e223-495f-beb6-d5be8c8ab351/b9c681be-e223-495f-beb6-d5be8c8ab351-1440x960.jpg",
+      "contents": "磨邊木棒、砂紙棒、棉布、床面處理劑、皮革保養油",
+      "forWho": "店家建議給已購買「有打洞」材料包的人"
+    },
+    {
+      "name": "進階基礎工具套組",
+      "price": 2580,
+      "buyUrl": "https://booking.haruistudio.com/products/ypqoorrc",
+      "image": "https://d10vnvbjqqg3q7.cloudfront.net/54eb44f1-69c1-453a-89f1-4258924bf2a0/media/c56f4fc5-1c1f-4fed-93a8-029e8cf1bdc7/c56f4fc5-1c1f-4fed-93a8-029e8cf1bdc7-1440x960.jpg",
+      "contents": "磨邊木棒、砂紙棒、棉布、床面處理劑、皮革保養油、膠台、錐子、銀筆、木槌、塗膠板、菱斬（六斬和兩斬）、畫線器、白膠",
+      "forWho": "店家建議給想從皮革打洞開始製作的人"
+    }
+  ],
+  "materialNote": "部分皮料、布料、五金數量有限，若有短缺將以最接近的材料替代。照片顏色可能略有色偏，以實品為準；皮革上的紋理與痕跡是天然特徵。"
+}
