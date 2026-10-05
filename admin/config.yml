@@ -1,0 +1,149 @@
+# 春豬工作室內容後台（Decap CMS）
+# 部署前請修改 repo；GitHub 登入需要一個 OAuth 代理服務（見 README「後台登入」）
+backend:
+  name: github
+  repo: harui-studio/harui-studio
+  branch: main
+  base_url: https://YOUR-OAUTH-PROXY.example.com
+  commit_messages:
+    update: "後台更新：{{slug}}"
+
+locale: zh_Hant
+media_folder: src/assets/uploads
+public_folder: /assets/uploads
+
+collections:
+  - name: settings
+    label: 網站內容
+    files:
+      - name: site
+        label: 首頁、品牌與聯絡
+        file: content/site.json
+        fields:
+          - { name: siteName, label: 網站名稱, widget: string }
+          - { name: shortName, label: 短名稱, widget: string }
+          - { name: siteUrl, label: 正式網址（例 https://harui.tw，無則留空）, widget: string, required: false }
+          - { name: inquiryEndpoint, label: 客製表單收件網址（Apps Script 網頁應用程式網址）, widget: string, required: false }
+          - { name: ga4Id, label: GA4 評估 ID（取得同意後才填，例 G-XXXX）, widget: string, required: false }
+          - name: contact
+            label: 聯絡資訊
+            widget: object
+            fields:
+              - { name: address, label: 地址, widget: string }
+              - { name: phone, label: 電話（顯示）, widget: string }
+              - { name: phoneHref, label: 電話（撥號用，例 +886223216931）, widget: string }
+              - { name: email, label: Email, widget: string }
+              - { name: facebook, label: Facebook 網址, widget: string }
+              - { name: instagram, label: Instagram 網址, widget: string }
+              - { name: hours, label: 營業時間（確認後再填，空白則不顯示）, widget: string, required: false }
+          - name: home
+            label: 首頁首屏
+            widget: object
+            fields:
+              - { name: heroTitle, label: 標題, widget: string }
+              - { name: heroText, label: 說明, widget: text }
+              - { name: heroNote, label: 材料包提醒, widget: string }
+              - { name: heroImage, label: 首屏圖片, widget: image }
+          - name: about
+            label: 品牌介紹
+            widget: object
+            fields:
+              - { name: story, label: 品牌故事, widget: text }
+              - { name: nameOrigin, label: 名稱由來, widget: text }
+          - name: classes
+            label: 課程
+            widget: object
+            fields:
+              - { name: text, label: 課程說明, widget: text }
+              - { name: link, label: 開課資訊連結, widget: string }
+          - name: works
+            label: 作品集連結
+            widget: list
+            fields:
+              - { name: name, label: 名稱, widget: string }
+              - { name: url, label: 網址, widget: string }
+              - { name: note, label: 說明, widget: string }
+          - name: faq
+            label: 常見問題（店家確認的問答）
+            widget: list
+            required: false
+            fields:
+              - { name: q, label: 問題, widget: string }
+              - { name: a, label: 回答, widget: text }
+          - name: policies
+            label: 條款
+            widget: object
+            fields:
+              - { name: shopping, label: 購物須知, widget: text, required: false }
+              - { name: privacy, label: 隱私權政策, widget: text, required: false }
+
+      - name: kits
+        label: 材料包與工具組
+        file: content/kits.json
+        fields:
+          - name: kits
+            label: 材料包
+            widget: list
+            summary: "{{fields.styleNo}} {{fields.name}}"
+            fields:
+              - { name: slug, label: 網址代稱（英文，建立後勿改）, widget: string }
+              - { name: styleNo, label: 款式編號, widget: string }
+              - { name: name, label: 名稱, widget: string }
+              - { name: type, label: 作品類型, widget: string }
+              - { name: difficulty, label: 店家標示難度（1–5）, widget: number, value_type: int, min: 1, max: 5 }
+              - { name: difficultyNote, label: 難度說明, widget: string }
+              - { name: material, label: 材質, widget: string }
+              - { name: size, label: 完成尺寸（空白則不顯示）, widget: string, required: false }
+              - { name: notIncluded, label: 不包含的東西（空白則不顯示）, widget: string, required: false }
+              - { name: steps, label: 客人需完成的步驟（空白則不顯示）, widget: text, required: false }
+              - { name: experience, label: 是否需手作經驗（空白則不顯示）, widget: string, required: false }
+              - { name: delivery, label: 交期（空白則不顯示）, widget: string, required: false }
+              - { name: shipping, label: 配送（空白則不顯示）, widget: string, required: false }
+              - { name: teaching, label: 教學提供方式, widget: string }
+              - { name: featured, label: 顯示在首頁, widget: boolean, default: false }
+              - name: variants
+                label: 版本
+                widget: list
+                summary: "{{fields.name}} NT${{fields.price}}"
+                fields:
+                  - { name: name, label: 版本名稱, widget: string }
+                  - { name: color, label: 顏色, widget: string }
+                  - { name: punched, label: 已打洞, widget: boolean }
+                  - { name: price, label: 價格（新台幣）, widget: number, value_type: int }
+                  - { name: buyUrl, label: 購買頁網址, widget: string }
+                  - { name: image, label: 作品照片, widget: image }
+                  - { name: contents, label: 包內內容, widget: list }
+                  - { name: toolTip, label: 工具建議, widget: string }
+          - name: tools
+            label: 工具組
+            widget: list
+            fields:
+              - { name: name, label: 名稱, widget: string }
+              - { name: price, label: 價格, widget: number, value_type: int }
+              - { name: buyUrl, label: 購買頁網址, widget: string }
+              - { name: image, label: 照片, widget: image }
+              - { name: contents, label: 內容, widget: text }
+              - { name: forWho, label: 建議對象, widget: string }
+          - { name: materialNote, label: 材料說明, widget: text }
+
+      - name: tutorials
+        label: 教學
+        file: content/tutorials.json
+        fields:
+          - { name: intro, label: 頁面說明, widget: text }
+          - name: items
+            label: 各材料包教學
+            widget: list
+            summary: "{{fields.kitSlug}}"
+            fields:
+              - { name: kitSlug, label: 對應材料包代稱, widget: string }
+              - { name: method, label: 教學方式, widget: string }
+              - name: links
+                label: 教學連結（影片、圖文）
+                widget: list
+                required: false
+                fields:
+                  - { name: title, label: 標題, widget: string }
+                  - { name: url, label: 網址, widget: string }
+              - { name: buyersOnly, label: 僅限購買者（勾選後不公開連結）, widget: boolean, default: false }
+          - { name: helpText, label: 卡關求助說明, widget: text }
